@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <title>Supabase Auth</title>
+</head>
+<body>
+    <div id="auth-container">
+        <h1>Supabase Authentication</h1>
+        
+        <!-- Signup Form -->
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-email" placeholder="Enter your email" required />
+            <input type="password" id="signup-password" placeholder="Enter your password" required />
+            <button id="signup-btn">Sign Up</button>
+        </div>
+        
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Enter your email" required />
+            <input type="password" id="login-password" placeholder="Enter your password" required />
+            <button id="login-btn">Login</button>
+        </div>
+        
+        <div id="message"></div>
+    </div>
+    <script type="module" src="../scripts/auth.js" defer></script>
+</body>
+</html>
